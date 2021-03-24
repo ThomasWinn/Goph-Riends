@@ -16,6 +16,7 @@ class LoginFormState {
         this.usernameError = usernameError;
         this.passwordError = passwordError;
         this.isDataValid = false;
+
     }
 
     LoginFormState(boolean isDataValid) {

@@ -158,6 +158,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Display_Name" />
 
+
     <TextView
         android:id="@+id/Input_DOB"
         android:layout_width="134dp"
