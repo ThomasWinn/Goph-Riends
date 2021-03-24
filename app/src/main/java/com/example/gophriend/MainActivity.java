@@ -1,5 +1,6 @@
 package com.example.gophriend;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.gophriend.ui.main.SectionsPagerAdapter;
 
@@ -36,4 +38,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }
