@@ -21,6 +21,7 @@ import java.util.Collections;
 //Source code: https://github.com/mitchtabian/DatePickerDialog
 //Source code: https://www.youtube.com/watch?v=on_OrrX7Nw4
 
+
 public class RegisterPage extends AppCompatActivity {
     private static final String TAG = "RegisterPage";
     private TextView mDisplayDate;
