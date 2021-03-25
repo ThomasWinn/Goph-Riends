@@ -40,7 +40,7 @@ public class RegisterPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.event_discover_page);
 
         //Code for Interests
         Interests = findViewById(R.id.Select_interests);
