@@ -1,15 +1,13 @@
 package com.example.gophriend.ui.main;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.gophriend.R;
@@ -23,8 +21,25 @@ public class PlaceholderFragment extends Fragment {
 
     private PageViewModel pageViewModel;
 
-    public static PlaceholderFragment newInstance(int index) {
-        PlaceholderFragment fragment = new PlaceholderFragment();
+    public static Fragment newInstance(int index, String title) {
+        Fragment fragment = null;
+
+        if ("People".equalsIgnoreCase(title)) {
+            Log.i("debug", title + " hits Home Fragment");
+            fragment = new SwipeFragment();
+        } else if ("Clubs".equalsIgnoreCase(title)) {
+            Log.i("debug", title + " hits Third Fragment");
+            fragment = new SwipeFragment();
+        } else if ("Events".equalsIgnoreCase(title)) {
+            Log.i("debug", title + " hits Swipe Fragment");
+            fragment = new SwipeFragment();
+        } else {
+            Log.i("debug", title + " hits Default Fragment");
+            fragment = new PlaceholderFragment();
+        }
+
+//        PlaceholderFragment
+        Log.i("debug", String.format("The fragement of page %s is %d", title, fragment.hashCode()));
         Bundle bundle = new Bundle();
         bundle.putInt(ARG_SECTION_NUMBER, index);
         fragment.setArguments(bundle);
@@ -40,20 +55,21 @@ public class PlaceholderFragment extends Fragment {
             index = getArguments().getInt(ARG_SECTION_NUMBER);
         }
         pageViewModel.setIndex(index);
+
     }
 
     @Override
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_main, container, false);
-        final TextView textView = root.findViewById(R.id.section_label);
-        pageViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        View root = inflater.inflate(R.layout.fragment_swipe_one, container, false);
+//        final TextView textView = root.findViewById(R.id.section_label);
+//        pageViewModel.getText().observe(this, new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
         return root;
     }
 }
