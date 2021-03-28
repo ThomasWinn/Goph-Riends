@@ -56,7 +56,7 @@ public class event_creation extends AppCompatActivity implements AdapterView.OnI
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.event_creation);
 
         //Assign variables
         mDisplayDate = (TextView) findViewById(R.id.tvDate);

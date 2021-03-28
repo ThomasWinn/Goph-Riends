@@ -50,7 +50,7 @@ public class Club_creation extends AppCompatActivity implements AdapterView.OnIt
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.club_create_display);
 
         //Assign variable
         spinnerHour = findViewById(R.id.spinner1); //For hour

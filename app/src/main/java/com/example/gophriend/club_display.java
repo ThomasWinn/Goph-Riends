@@ -6,12 +6,16 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.gophriend.R;
 
 public class club_display extends AppCompatActivity {
+
+    Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,8 @@ public class club_display extends AppCompatActivity {
         String Hour = intent.getStringExtra("Hour");
         String Minutes = intent.getStringExtra("Minutes");
         String LMAO = intent.getStringExtra("LUL");
+
+        backButton = findViewById(R.id.button4);
 
         TextView textCname = (TextView) findViewById(R.id.Club_name);
         TextView textCdes = (TextView) findViewById(R.id.Club_description);
@@ -43,12 +49,21 @@ public class club_display extends AppCompatActivity {
         textMinutes.setText(Minutes);
         textLMAO.setText(LMAO);
 
+
+
         //Picture stuffs
         Bundle extras = getIntent().getExtras();
         byte[] byteArray = extras.getByteArray("picture");
         Bitmap bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
         ImageView image = (ImageView) findViewById(R.id.imageView2);
         image.setImageBitmap(bmp);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(club_display.this, MainActivity.class));
+            }
+        });
     }
 
 }
