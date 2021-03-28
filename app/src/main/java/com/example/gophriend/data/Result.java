@@ -20,6 +20,7 @@ public class Result<T> {
         return "";
     }
 
+
     // Success sub-class
     public final static class Success<T> extends Result {
         private T data;

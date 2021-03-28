@@ -21,6 +21,7 @@ public class LoginViewModelFactory implements ViewModelProvider.Factory {
             return (T) new LoginViewModel(LoginRepository.getInstance(new LoginDataSource()));
         } else {
             throw new IllegalArgumentException("Unknown ViewModel class");
+
         }
     }
 }

@@ -8,6 +8,7 @@ import com.example.gophriend.data.model.LoggedInUser;
  */
 public class LoginRepository {
 
+
     private static volatile LoginRepository instance;
 
     private LoginDataSource dataSource;
