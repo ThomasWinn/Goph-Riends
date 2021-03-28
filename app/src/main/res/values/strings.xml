@@ -14,6 +14,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
 
+
     <!--Tin's stuffs below-->
     <string-array name="Hour">
         <item>0</item>
@@ -103,5 +104,25 @@
         <item>Interests Drop Down</item>
         <item>Video games</item>
     </string-array>
+
+    <string name="club1">Club1</string>
+    <string name="club2">Club2</string>
+    <string name="club3">Club3</string>
+    <string name="club4">Club4</string>
+    <string name="sample_club2_image">sample club2 image</string>
+    <string name="sample_club1_image">sample club1 image</string>
+    <string name="sample_club3_images">sample club3 images</string>
+    <string name="sample_club4_images">sample club4 images</string>
+    <string name="event1">Event1</string>
+    <string name="event2">Event2</string>
+    <string name="event3">Event3</string>
+    <string name="event4">Event4</string>
+    <string name="sample_event2_image">sample_event2_image</string>
+    <string name="sample_event1_image">sample_event1_image</string>
+    <string name="sample_event4_images">sample_event4_images</string>
+    <string name="sample_event3_images">sample_event3_images</string>
+    <string name="link_to_event_creation">link to event creation</string>
+    <string name="link_to_add_club_creation">link_to_add_club_creation</string>
+
 
 </resources>
