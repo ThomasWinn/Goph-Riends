@@ -30,10 +30,10 @@ public class PlaceholderFragment extends Fragment {
             fragment = new SwipeFragment();
         } else if ("Clubs".equalsIgnoreCase(title)) {
             Log.i("debug", title + " hits Third Fragment");
-            fragment = new SwipeFragment();
+            fragment = new club_discover();
         } else if ("Events".equalsIgnoreCase(title)) {
             Log.i("debug", title + " hits Swipe Fragment");
-            fragment = new SwipeFragment();
+            fragment = new event_display();
         } else {
             Log.i("debug", title + " hits Default Fragment");
             fragment = new PlaceholderFragment();
