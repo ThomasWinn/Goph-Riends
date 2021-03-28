@@ -1,3 +1,4 @@
+
 package com.example.gophriend.ui.main;
 
 import android.os.Bundle;
@@ -73,3 +74,4 @@ public class PlaceholderFragment extends Fragment {
         return root;
     }
 }
+

@@ -24,6 +24,7 @@ class LoginResult {
         return success;
     }
 
+
     @Nullable
     Integer getError() {
         return error;

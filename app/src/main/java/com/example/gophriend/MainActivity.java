@@ -1,3 +1,4 @@
+
 package com.example.gophriend;
 
 import android.content.Intent;
@@ -19,6 +20,7 @@ import com.example.gophriend.ui.main.SectionsPagerAdapter;
 
 // Source for GridLayout on swipe_ui https://www.youtube.com/watch?v=PFEb9FfopFo
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,4 +58,5 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
     }
+
 }

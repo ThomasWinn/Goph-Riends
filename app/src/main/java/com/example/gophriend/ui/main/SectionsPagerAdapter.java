@@ -1,3 +1,4 @@
+
 package com.example.gophriend.ui.main;
 
 import android.content.Context;
@@ -45,4 +46,5 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // Show 2 total pages.
         return TAB_TITLES.length;
     }
+
 }
