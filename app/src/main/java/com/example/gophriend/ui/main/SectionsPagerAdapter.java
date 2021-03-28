@@ -1,3 +1,4 @@
+
 package com.example.gophriend.ui.main;
 
 import android.content.Context;
@@ -17,7 +18,7 @@ import com.example.gophriend.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -29,7 +30,9 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.
         // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1);
+        String pageTile = getPageTitle(position).toString();
+
+        return PlaceholderFragment.newInstance(position + 1, pageTile);
     }
 
     @Nullable
@@ -41,6 +44,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 2;
+        return TAB_TITLES.length;
     }
+
 }

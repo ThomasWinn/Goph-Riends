@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <TextView
+        android:id="@+id/Year_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginRight="350dp"
+        android:text="Year"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input_Major" />
+
+    <TextView
+        android:id="@+id/select_year"
+        android:layout_width="323dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:hint="Select Year"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Year_text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="664dp"
+        android:background="#FFFFFF"
+        android:text="Personal Information"
+        android:textSize="18sp"
+        app:drawableTint="#131313"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <View
+        android:id="@+id/Info_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="654dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Name_text"
+        android:layout_width="55dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="329dp"
+        android:layout_marginRight="329dp"
+        android:layout_marginBottom="602dp"
+        android:text="Name"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editPersonName"
+        android:layout_width="203dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginRight="179dp"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:hint="Enter Name"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name_text" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/Display_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="283dp"
+        android:layout_marginRight="283dp"
+        android:text="Display Name"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPersonName" />
+
+    <TextView
+        android:id="@+id/DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="303dp"
+        android:layout_marginRight="303dp"
+        android:text="Date Of Birth"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input_DOB" />
+
+    <TextView
+        android:id="@+id/Major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="285dp"
+        android:layout_marginRight="285dp"
+        android:text="College Major"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DOB" />
+
+    <TextView
+        android:id="@+id/Interests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginRight="321dp"
+        android:text="Interests"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_year" />
+    //app:layout_constraintTop_toBottomOf="@+id/Input_Major"
+    />
+
+    <EditText
+        android:id="@+id/editDisplayName"
+        android:layout_width="206dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginRight="179dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:hint="Enter Display Name"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Display_Name" />
+
+    <TextView
+        android:id="@+id/Input_DOB"
+        android:layout_width="206dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
+        android:hint="Select Date Of Birth"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDisplayName" />
+
+    <TextView
+        android:id="@+id/Input_Major"
+        android:layout_width="323dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:hint="Select Major"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Major" />
+
+    <TextView
+        android:id="@+id/Select_interests"
+        android:layout_width="349dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:hint="Select Interests"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Interests" />
+
+    <Button
+        android:id="@+id/RegisterSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="8dp"
+        android:enabled="true"
+        android:text="Sign Up!"
+        app:backgroundTint="#800000"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Select_interests" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
