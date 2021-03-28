@@ -15,17 +15,15 @@
     <string name="people">People</string>
     <string name="club">Club</string>
     <string name="event">Event</string>
-    <string name="todo">TODO</string>
+
     <string name="club1">Club1</string>
     <string name="club2">Club2</string>
     <string name="club3">Club3</string>
     <string name="club4">Club4</string>
     <string name="sample_club2_image">sample club2 image</string>
     <string name="sample_club1_image">sample club1 image</string>
-    <string name="sample_club4_images">sample club4 images</string>
     <string name="sample_club3_images">sample club3 images</string>
-    <string name="sample">sample</string>
-    <string name="link_to_add_event_page">link to add event page</string>
+    <string name="sample_club4_images">sample club4 images</string>
     <string name="event1">Event1</string>
     <string name="event2">Event2</string>
     <string name="event3">Event3</string>
@@ -34,7 +32,7 @@
     <string name="sample_event1_image">sample_event1_image</string>
     <string name="sample_event4_images">sample_event4_images</string>
     <string name="sample_event3_images">sample_event3_images</string>
-    <string name="go_to_message">go_to_message</string>
-    <string name="back_to_profile">back to profile</string>
+    <string name="link_to_event_creation">link to event creation</string>
+    <string name="link_to_add_club_creation">link_to_add_club_creation</string>
 
 </resources>
