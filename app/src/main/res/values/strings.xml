@@ -34,5 +34,7 @@
     <string name="sample_event1_image">sample_event1_image</string>
     <string name="sample_event4_images">sample_event4_images</string>
     <string name="sample_event3_images">sample_event3_images</string>
+    <string name="go_to_message">go_to_message</string>
+    <string name="back_to_profile">back to profile</string>
 
 </resources>

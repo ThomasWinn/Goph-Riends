@@ -94,6 +94,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+
     <ImageView
         android:id="@+id/event1"
         android:layout_width="173dp"
@@ -116,7 +117,6 @@
         android:text="@string/event1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/event2"
         android:layout_width="173dp"
@@ -144,17 +144,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/eventText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="74dp"
-        android:layout_marginLeft="74dp"
-        android:layout_marginBottom="140dp"
-        android:text="@string/event3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/event3"
         android:layout_width="173dp"
@@ -166,6 +155,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/eventText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/event3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/event4"
@@ -206,6 +206,31 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <ImageButton
+        android:id="@+id/inboxButton"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:contentDescription="@string/go_to_message"
+        android:tint="#673AB7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ImageButton
+        android:id="@+id/profileButton"
+        android:layout_width="51dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:contentDescription="@string/back_to_profile"
+        android:tint="#673AB7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
