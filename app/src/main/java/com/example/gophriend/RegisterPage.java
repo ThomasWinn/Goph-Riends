@@ -1,9 +1,11 @@
+
 package com.example.gophriend;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.app.DatePickerDialog;
@@ -11,6 +13,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
@@ -21,8 +24,16 @@ import java.util.Collections;
 //Source code: https://github.com/mitchtabian/DatePickerDialog
 //Source code: https://www.youtube.com/watch?v=on_OrrX7Nw4
 
-
 public class RegisterPage extends AppCompatActivity {
+    private Button signUpButton;
+    private Button yearButton;
+
+
+    public void openSignUpActivity() {
+        Intent singUpIntent = new Intent(this, MainActivity.class);
+        startActivity(singUpIntent);
+    }
+
     private static final String TAG = "RegisterPage";
     private TextView mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
@@ -36,20 +47,32 @@ public class RegisterPage extends AppCompatActivity {
     TextView Interests;
     boolean[] interests;
     ArrayList<Integer> interestslist = new ArrayList<>();
-    String[] interestsArray = {"Video Games", "Basketball"};
+    String[] interestsArray = {"Chess", "Golf", "Video Games", "Boba", "Hotpot","Basketball"};
+
+
+    //code for Year
+    TextView Years;
+    boolean[] years;
+    ArrayList<Integer> yearlist = new ArrayList<>();
+    CharSequence[] yearArray = {"Incoming", "Freshman", "Sophomore", "Junior", "Senior", "Graduate Student"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register_page);
+
+        signUpButton = (Button) findViewById(R.id.RegisterSignUp);
 
         //Code for Interests
-        Interests = findViewById(R.id.Select_interests);
+        Interests = (TextView) findViewById(R.id.Select_interests);
         //Selected Interests array
         interests = new boolean[interestsArray.length];
+
         Interests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 //initilize alert dialog
                 AlertDialog.Builder builder = new AlertDialog.Builder(
                         RegisterPage.this);
@@ -99,13 +122,17 @@ public class RegisterPage extends AppCompatActivity {
                     }
                 });
                 builder.show();
+
+
             }
         });
 
+
         //Code for majors
-        Majors = findViewById(R.id.Input_Major);
+        Majors = (TextView) findViewById(R.id.Input_Major);
         //Selected major array
         majors = new boolean[majorsArray.length];
+
         Majors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -160,8 +187,31 @@ public class RegisterPage extends AppCompatActivity {
                 builder.show();
             }
         });
+        //Source: https://www.youtube.com/watch?v=rTXafzJP3Lk
 
-        //Code for Date of Birth
+        Years = (TextView) findViewById(R.id.select_year);
+
+        Years.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(RegisterPage.this);
+                alertDialogBuilder.setTitle("Select your year");
+                alertDialogBuilder.setCancelable(true);
+                alertDialogBuilder.setSingleChoiceItems(yearArray, 0, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Years.setText(yearArray[which]);
+                        dialog.dismiss();
+                    }
+                });
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialog.setCanceledOnTouchOutside(true);
+                alertDialog.show();
+            }
+        });
+
+
+                //Code for Date of Birth
         mDisplayDate = (TextView) findViewById(R.id.DOB);
         mDisplayDate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -190,6 +240,16 @@ public class RegisterPage extends AppCompatActivity {
                 mDisplayDate.setText(date);
             }
         };
+        //Button activity, Cite:https://www.youtube.com/watch?v=bgIUdb-7Rqo
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSignUpActivity();
+            }
+        });
+
+
 
     }
+
 }
