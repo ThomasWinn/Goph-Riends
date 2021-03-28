@@ -7,31 +7,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <ImageView
-        android:id="@+id/event1"
+        android:id="@+id/club1"
         android:layout_width="173dp"
         android:layout_height="169dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="172dp"
-        android:contentDescription="@string/sample_event1_image"
+        android:contentDescription="@string/sample_club1_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/eventText1"
+        android:id="@+id/clubText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="352dp"
-        android:text="@string/event1"
+        android:text="@string/club1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
-        android:id="@+id/event2"
+        android:id="@+id/club2"
         android:layout_width="173dp"
         android:layout_height="169dp"
         android:layout_marginStart="228dp"
@@ -39,7 +39,7 @@
         android:layout_marginTop="172dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:contentDescription="@string/sample_event2_image"
+        android:contentDescription="@string/sample_club2_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,41 +47,41 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/eventText2"
+        android:id="@+id/clubText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="352dp"
         android:layout_marginEnd="72dp"
         android:layout_marginRight="72dp"
-        android:text="@string/event2"
+        android:text="@string/club2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/event3"
+        android:id="@+id/club3"
         android:layout_width="173dp"
         android:layout_height="169dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="176dp"
-        android:contentDescription="@string/sample_event3_images"
+        android:contentDescription="@string/sample_club3_images"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/eventText3"
+        android:id="@+id/clubText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="74dp"
         android:layout_marginLeft="74dp"
         android:layout_marginBottom="140dp"
-        android:text="@string/event3"
+        android:text="@string/club3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/event4"
+        android:id="@+id/club4"
         android:layout_width="173dp"
         android:layout_height="169dp"
         android:layout_marginStart="228dp"
@@ -89,7 +89,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="176dp"
-        android:contentDescription="@string/sample_event4_images"
+        android:contentDescription="@string/sample_club4_images"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -97,13 +97,13 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/eventText4"
+        android:id="@+id/clubText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="74dp"
         android:layout_marginRight="74dp"
         android:layout_marginBottom="140dp"
-        android:text="@string/event4"
+        android:text="@string/club4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -114,7 +114,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="16dp"
-        android:contentDescription="@string/link_to_event_creation"
+        android:contentDescription="@string/link_to_add_club_creation"
         app:backgroundTint="#AFA9B8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
