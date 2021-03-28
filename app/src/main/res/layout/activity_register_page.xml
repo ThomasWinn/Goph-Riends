@@ -7,6 +7,38 @@
     tools:context=".RegisterPage">
 
     <TextView
+        android:id="@+id/Year_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginRight="350dp"
+        android:text="Year"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input_Major" />
+
+    <TextView
+        android:id="@+id/select_year"
+        android:layout_width="323dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:hint="Select Year"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Year_text" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,7 +94,8 @@
         android:layout_marginEnd="179dp"
         android:layout_marginRight="179dp"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColorHint="@color/black"
+        android:hint="Enter Name"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,7 +133,7 @@
         android:layout_marginEnd="303dp"
         android:layout_marginRight="303dp"
         android:text="Date Of Birth"
-        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -131,10 +164,13 @@
         android:layout_marginEnd="321dp"
         android:layout_marginRight="321dp"
         android:text="Interests"
+        android:textColorHint="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Input_Major" />
+        app:layout_constraintTop_toBottomOf="@+id/select_year" />
+    //app:layout_constraintTop_toBottomOf="@+id/Input_Major"
+    />
 
     <EditText
         android:id="@+id/editDisplayName"
@@ -147,7 +183,8 @@
         android:layout_marginRight="179dp"
         android:ems="8"
         android:inputType="textPersonName"
-        android:text="Display Name"
+        android:hint="Enter Display Name"
+        android:textColorHint="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -155,13 +192,13 @@
 
     <TextView
         android:id="@+id/Input_DOB"
-        android:layout_width="134dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_width="206dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
         android:layout_marginTop="42dp"
-        android:layout_marginEnd="249dp"
-        android:layout_marginRight="249dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
         android:hint="Select Date Of Birth"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -186,8 +223,8 @@
 
     <TextView
         android:id="@+id/Select_interests"
-        android:layout_width="347dp"
-        android:layout_height="116dp"
+        android:layout_width="349dp"
+        android:layout_height="48dp"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
         android:layout_marginTop="7dp"
@@ -205,15 +242,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="8dp"
         android:enabled="true"
         android:text="Sign Up!"
         app:backgroundTint="#800000"
         app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Select_interests" />
 

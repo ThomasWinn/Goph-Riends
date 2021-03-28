@@ -25,6 +25,7 @@ import java.util.Collections;
 
 public class RegisterPage extends AppCompatActivity {
     private Button signUpButton;
+    private Button yearButton;
 
 
     public void openSignUpActivity() {
@@ -45,7 +46,14 @@ public class RegisterPage extends AppCompatActivity {
     TextView Interests;
     boolean[] interests;
     ArrayList<Integer> interestslist = new ArrayList<>();
-    String[] interestsArray = {"Video Games", "Basketball"};
+    String[] interestsArray = {"Chess", "Golf", "Video Games", "Boba", "Hotpot","Basketball"};
+
+
+    //code for Year
+    TextView Years;
+    boolean[] years;
+    ArrayList<Integer> yearlist = new ArrayList<>();
+    CharSequence[] yearArray = {"Incoming", "Freshman", "Sophomore", "Junior", "Senior", "Graduate Student"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,9 +186,31 @@ public class RegisterPage extends AppCompatActivity {
                 builder.show();
             }
         });
+        //Source: https://www.youtube.com/watch?v=rTXafzJP3Lk
+
+        Years = (TextView) findViewById(R.id.select_year);
+
+        Years.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(RegisterPage.this);
+                alertDialogBuilder.setTitle("Select your year");
+                alertDialogBuilder.setCancelable(true);
+                alertDialogBuilder.setSingleChoiceItems(yearArray, 0, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Years.setText(yearArray[which]);
+                        dialog.dismiss();
+                    }
+                });
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialog.setCanceledOnTouchOutside(true);
+                alertDialog.show();
+            }
+        });
 
 
-        //Code for Date of Birth
+                //Code for Date of Birth
         mDisplayDate = (TextView) findViewById(R.id.DOB);
         mDisplayDate.setOnClickListener(new View.OnClickListener() {
             @Override
