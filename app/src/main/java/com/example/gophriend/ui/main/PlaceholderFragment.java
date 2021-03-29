@@ -33,7 +33,7 @@ public class PlaceholderFragment extends Fragment {
             fragment = new club_discover();
         } else if ("Events".equalsIgnoreCase(title)) {
             Log.i("debug", title + " hits Swipe Fragment");
-            fragment = new event_display();
+            fragment = new event_discover();
         } else {
             Log.i("debug", title + " hits Default Fragment");
             fragment = new PlaceholderFragment();

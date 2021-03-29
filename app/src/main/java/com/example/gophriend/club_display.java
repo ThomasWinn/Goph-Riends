@@ -61,7 +61,14 @@ public class club_display extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(club_display.this, MainActivity.class));
+//                startActivity(new Intent(club_display.this, MainActivity.class));
+
+                String val = "1";
+
+                Intent intent = new Intent(club_display.this, MainActivity.class);
+                intent.putExtra("value", val);
+
+                startActivity(intent);
             }
         });
     }

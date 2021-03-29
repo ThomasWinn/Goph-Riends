@@ -14,7 +14,7 @@ import com.example.gophriend.R;
 import com.example.gophriend.event_creation;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class event_display extends Fragment {
+public class event_discover extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.event_discover_page, container, false);

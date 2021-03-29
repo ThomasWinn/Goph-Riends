@@ -36,6 +36,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="76dp"
                 android:layout_marginRight="76dp"
+
                 app:layout_constraintEnd_toStartOf="@+id/title"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

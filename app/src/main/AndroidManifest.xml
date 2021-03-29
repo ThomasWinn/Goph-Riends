@@ -17,10 +17,13 @@
         <activity android:name=".RegisterPage" />
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.Gophriend.NoActionBar"
             android:label="@string/title_activity_login" />
         <activity android:name=".club_display"
+            android:theme="@style/Theme.Gophriend.NoActionBar"
             android:parentActivityName=".Club_creation"></activity>
         <activity android:name=".event_display"
+            android:theme="@style/Theme.Gophriend.NoActionBar"
             android:parentActivityName=".event_creation"></activity>
         <activity
             android:name=".ui.login.LoginActivity"
@@ -34,9 +37,12 @@
         </activity>
 
         <activity
-            android:name=".ProfilePage"/>
-        <activity android:name=".Club_creation"></activity>
-        <activity android:name=".event_creation"></activity>
+            android:name=".ProfilePage"
+            android:theme="@style/Theme.Gophriend.NoActionBar"/>
+        <activity android:name=".Club_creation"
+            android:theme="@style/Theme.Gophriend.NoActionBar"></activity>
+        <activity android:name=".event_creation"
+            android:theme="@style/Theme.Gophriend.NoActionBar"></activity>
 
 
     </application>

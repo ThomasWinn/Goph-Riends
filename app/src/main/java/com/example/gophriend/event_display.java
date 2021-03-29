@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -33,6 +35,8 @@ public class event_display extends AppCompatActivity {
         TextView textMinutes = (TextView) findViewById(R.id.Minutes);
         TextView textLMAO = (TextView) findViewById(R.id.LMAO);
 
+        Button backButton = (Button) findViewById(R.id.button3);
+
         textEname.setText(name);
         textEdes.setText(description);
         textInterests.setText(interests_lists);
@@ -47,6 +51,20 @@ public class event_display extends AppCompatActivity {
         Bitmap bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
         ImageView image = (ImageView) findViewById(R.id.imageView2);
         image.setImageBitmap(bmp);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                startActivity(new Intent(club_display.this, MainActivity.class));
+
+                String val = "2";
+
+                Intent intent = new Intent(event_display.this, MainActivity.class);
+                intent.putExtra("value", val);
+
+                startActivity(intent);
+            }
+        });
     }
 
 }
