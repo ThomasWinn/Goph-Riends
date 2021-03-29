@@ -21,12 +21,22 @@ import com.example.gophriend.ui.main.SectionsPagerAdapter;
 // Source for GridLayout on swipe_ui https://www.youtube.com/watch?v=PFEb9FfopFo
 public class MainActivity extends AppCompatActivity {
 
+    int pass_value = -999;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager()); // communicate with tabs
+
+        Intent intent = getIntent();
+        String value = intent.getStringExtra("value");
+        if (value == null){
+            value = "-999";
+        }
+        int val = Integer.parseInt(value); // -999
+        pass_value = val;
+
+        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager(), pass_value); // communicate with tabs
         ViewPager viewPager = findViewById(R.id.view_pager); // finds the view pager
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs); // get tabs in activity main

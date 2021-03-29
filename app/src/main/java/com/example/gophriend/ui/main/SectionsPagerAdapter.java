@@ -17,13 +17,16 @@ import com.example.gophriend.R;
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
+    int value = -999;
+
     @StringRes
     private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3};
     private final Context mContext;
 
-    public SectionsPagerAdapter(Context context, FragmentManager fm) {
+    public SectionsPagerAdapter(Context context, FragmentManager fm, int pass_value) {
         super(fm);
         mContext = context;
+        this.value = pass_value;
     }
 
     @Override
@@ -32,7 +35,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // Return a PlaceholderFragment (defined as a static inner class below).
         String pageTile = getPageTitle(position).toString();
 
-        return PlaceholderFragment.newInstance(position + 1, pageTile);
+        return PlaceholderFragment.newInstance(position + 1, pageTile, value);
     }
 
     @Nullable
