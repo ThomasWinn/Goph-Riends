@@ -33,4 +33,6 @@ public class club_discover extends Fragment{
     }
 
 
+
+
 }
