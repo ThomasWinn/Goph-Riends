@@ -14,24 +14,22 @@
         android:layout_height="169dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="100dp"
         android:contentDescription="@string/sample_event1_image"
+        android:src="@drawable/hackathon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/hackathon" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/eventText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="352dp"
+        android:layout_marginTop="20dp"
         android:text="Weekend Hackaton"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/event1"
+        tools:layout_editor_absoluteX="25dp" />
 
     <ImageView
         android:id="@+id/event2"
@@ -39,28 +37,28 @@
         android:layout_height="169dp"
         android:layout_marginStart="228dp"
         android:layout_marginLeft="228dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:contentDescription="@string/sample_event2_image"
+        android:src="@drawable/football"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/football" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/eventText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="352dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:text="UMN Football Game"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/event2" />
 
     <ImageView
         android:id="@+id/event3"
@@ -68,11 +66,11 @@
         android:layout_height="169dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginBottom="176dp"
+        android:layout_marginBottom="200dp"
         android:contentDescription="@string/sample_event3_images"
+        android:src="@drawable/rave"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@drawable/rave" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/eventText3"
@@ -80,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="150dp"
         android:text="Friday Rave Party"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -95,13 +93,13 @@
         android:layout_marginLeft="228dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="176dp"
+        android:layout_marginBottom="200dp"
         android:contentDescription="@string/sample_event4_images"
+        android:src="@drawable/yoga"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@drawable/yoga" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/eventText4"
@@ -109,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="150dp"
         android:text="Sunday Yoga at Park"
         android:textSize="18sp"
         android:textStyle="bold"

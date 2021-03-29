@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -22,23 +23,24 @@ public class club_discover extends Fragment{
         View view = inflater.inflate(R.layout.club_discover_page, container, false);
         FloatingActionButton button = view.findViewById(R.id.add);
 
+        /**ImageView imageclub1 = null;
+        imageclub1 = (ImageView)  imageclub1.findViewById(R.id.club1);
+        imageclub1.setImageResource(R.drawable.chess);
 
-        ImageView imgView1 = null;
-        imgView1 = (ImageView) imgView1.findViewById(R.id.club1);
-        imgView1.setImageResource(R.drawable.chess);
+        //TextView clubt1 =(TextView) findViewById(R.id.clubText1);
 
-        ImageView imgView2 = null;
-        imgView2 = (ImageView) imgView2.findViewById(R.id.club2);
-        imgView2.setImageResource(R.drawable.skii);
+        ImageView  imageclub2  = null;
+        imageclub2 = (ImageView) imageclub2.findViewById(R.id.club2);
+        imageclub2.setImageResource(R.drawable.skii);
 
 
-        ImageView imgView3 = null;
-        imgView3 = (ImageView) imgView3.findViewById(R.id.club3);
-        imgView3.setImageResource(R.drawable.amongus);
+        ImageView imageclub3 = null;
+        imageclub3 = (ImageView) imageclub3.findViewById(R.id.club3);
+        imageclub3.setImageResource(R.drawable.amongus);
 
-        ImageView imgView4 = null;
-        imgView4 = (ImageView) imgView4.findViewById(R.id.club4);
-        imgView4.setImageResource(R.drawable.dance);
+        ImageView imageclub4 = null;
+        imageclub4 = (ImageView) imageclub4.findViewById(R.id.club4);
+        imageclub4.setImageResource(R.drawable.dance);**/
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

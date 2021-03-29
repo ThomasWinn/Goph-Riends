@@ -21,7 +21,7 @@ public class event_discover extends Fragment {
         View view = inflater.inflate(R.layout.event_discover_page, container, false);
         FloatingActionButton button = view.findViewById(R.id.add);
 
-        ImageView imgView1 = null;
+        /**ImageView imgView1 = null;
         imgView1 = (ImageView) imgView1.findViewById(R.id.event1);
         imgView1.setImageResource(R.drawable.hackathon);
 
@@ -36,7 +36,7 @@ public class event_discover extends Fragment {
 
         ImageView imgView4 = null;
         imgView4 = (ImageView) imgView4.findViewById(R.id.event4);
-        imgView4.setImageResource(R.drawable.yoga);
+        imgView4.setImageResource(R.drawable.yoga);**/
 
 
 
