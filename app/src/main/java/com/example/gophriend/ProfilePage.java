@@ -1,7 +1,6 @@
 package com.example.gophriend;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -56,7 +55,7 @@ public class ProfilePage extends AppCompatActivity {
         adapter = new RecyclerAdapter(this, interestArray);
         recyclerView.setAdapter(adapter);
 
-        ImageButton ib = findViewById(R.id.back_butt_prof_page);
+        ImageButton ib = findViewById(R.id.back_button);
 
         ib.setOnClickListener(new View.OnClickListener() {
             @Override
