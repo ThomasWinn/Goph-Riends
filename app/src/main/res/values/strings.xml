@@ -12,7 +12,10 @@
     <string name="invalid_username">You must enter UMN Email Login Credentials</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-
+    <string name="sarah">Sarah has sent you a request!</string>
+    <string name="jill">Jill has accepted your request!</string>
+    <string name="john">John has accepted your request!</string>
+    <string name="ui">UI Design and Development has accepted you into their club!</string>
 
     <!--Tin's stuffs below-->
     <string-array name="Hour">
@@ -122,6 +125,7 @@
     <string name="sample_event3_images">sample_event3_images</string>
     <string name="link_to_event_creation">link to event creation</string>
     <string name="link_to_add_club_creation">link_to_add_club_creation</string>
+    <string name="example_club_picture">Example club picture</string>
 
 
 </resources>
