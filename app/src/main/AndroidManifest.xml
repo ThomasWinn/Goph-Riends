@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gophriend">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,21 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gophriend">
-
-
-
-
+        <activity android:name=".ui.Message.Inbox"/>
+        <activity android:name=".ui.Message.MessageMain"/>
         <activity android:name=".RegisterPage" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.Gophriend.NoActionBar"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".club_display"
-            android:theme="@style/Theme.Gophriend.NoActionBar"
-            android:parentActivityName=".Club_creation"></activity>
-        <activity android:name=".event_display"
-            android:theme="@style/Theme.Gophriend.NoActionBar"
-            android:parentActivityName=".event_creation"></activity>
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.Gophriend.NoActionBar" />
+        <activity
+            android:name=".club_display"
+            android:parentActivityName=".Club_creation"
+            android:theme="@style/Theme.Gophriend.NoActionBar" />
+        <activity
+            android:name=".event_display"
+            android:parentActivityName=".event_creation"
+            android:theme="@style/Theme.Gophriend.NoActionBar" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/app_name"
@@ -35,15 +37,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ProfilePage"
-            android:theme="@style/Theme.Gophriend.NoActionBar"/>
-        <activity android:name=".Club_creation"
-            android:theme="@style/Theme.Gophriend.NoActionBar"></activity>
-        <activity android:name=".event_creation"
-            android:theme="@style/Theme.Gophriend.NoActionBar"></activity>
-
-
+            android:theme="@style/Theme.Gophriend.NoActionBar" />
+        <activity
+            android:name=".Club_creation"
+            android:theme="@style/Theme.Gophriend.NoActionBar" />
+        <activity
+            android:name=".event_creation"
+            android:theme="@style/Theme.Gophriend.NoActionBar" />
     </application>
+
 </manifest>

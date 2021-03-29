@@ -2,6 +2,7 @@ package com.example.gophriend.ui.Message;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -29,14 +30,15 @@ public class MessageMain extends AppCompatActivity implements RoomListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.message);
         // This is where we write the mesage
+        Intent intent = getIntent();
+        String activeUser = intent.getStringExtra("username");
         editText = (EditText) findViewById(R.id.editText);
         messageAdapter = new MessageAdapter(this);
         messagesView = (ListView) findViewById(R.id.messages_view);
         messagesView.setAdapter(messageAdapter);
         MemberData data = new MemberData(getRandomName(), getRandomColor());
-
         scaledrone = new Scaledrone(channelID, data);
         scaledrone.connect(new Listener() {
             @Override

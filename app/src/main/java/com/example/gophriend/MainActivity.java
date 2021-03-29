@@ -4,6 +4,7 @@ package com.example.gophriend;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.gophriend.ui.Message.Inbox;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
@@ -43,11 +44,17 @@ public class MainActivity extends AppCompatActivity {
         tabs.setupWithViewPager(viewPager); // add tab titles
 
         ImageButton ib = (ImageButton) findViewById(R.id.prof_butt);
-
+        ImageButton inboxbutt = (ImageButton) findViewById(R.id.inboxButton);
         ib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ProfilePage.class));
+            }
+        });
+        inboxbutt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Inbox.class));
             }
         });
 
