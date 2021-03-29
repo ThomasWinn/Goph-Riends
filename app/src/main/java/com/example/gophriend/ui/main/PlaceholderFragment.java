@@ -22,7 +22,7 @@ public class PlaceholderFragment extends Fragment {
 
     private PageViewModel pageViewModel;
 
-    public static Fragment newInstance(int index, String title) {
+    public static Fragment newInstance(int index, String title, int value) {
         Fragment fragment = null;
 
         if ("People".equalsIgnoreCase(title)) {
@@ -30,10 +30,23 @@ public class PlaceholderFragment extends Fragment {
             fragment = new SwipeFragment();
         } else if ("Clubs".equalsIgnoreCase(title)) {
             Log.i("debug", title + " hits Third Fragment");
-            fragment = new club_discover();
+
+            if (value == 1)
+            {
+                fragment = new testtest();
+            }
+            else {
+                fragment = new club_discover();
+            }
         } else if ("Events".equalsIgnoreCase(title)) {
             Log.i("debug", title + " hits Swipe Fragment");
-            fragment = new event_discover();
+            if (value == 2)
+            {
+                fragment = new testtest();
+            }
+            else {
+                fragment = new event_discover();
+            }
         } else {
             Log.i("debug", title + " hits Default Fragment");
             fragment = new PlaceholderFragment();
