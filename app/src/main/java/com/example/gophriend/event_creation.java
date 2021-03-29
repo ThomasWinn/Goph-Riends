@@ -231,7 +231,7 @@ public class event_creation extends AppCompatActivity implements AdapterView.OnI
         String lul = spinnerLUL.getSelectedItem().toString();
 
         //Assign bitmap to pass picture to another activity
-        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.girl1);
+        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.images);
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
         byte[] byteArray = stream.toByteArray();
