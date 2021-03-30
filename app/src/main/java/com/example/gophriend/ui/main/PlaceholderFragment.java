@@ -33,7 +33,7 @@ public class PlaceholderFragment extends Fragment {
 
             if (value == 1)
             {
-                fragment = new testtest();
+                fragment = new club_discover_anime();
             }
             else {
                 fragment = new club_discover();
@@ -42,7 +42,7 @@ public class PlaceholderFragment extends Fragment {
             Log.i("debug", title + " hits Swipe Fragment");
             if (value == 2)
             {
-                fragment = new testtest();
+                fragment = new event_discover_meme();
             }
             else {
                 fragment = new event_discover();

@@ -231,10 +231,10 @@ public class event_creation extends AppCompatActivity implements AdapterView.OnI
         String lul = spinnerLUL.getSelectedItem().toString();
 
         //Assign bitmap to pass picture to another activity
-        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.images);
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
-        byte[] byteArray = stream.toByteArray();
+//        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.images);
+//        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+//        bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+//        byte[] byteArray = stream.toByteArray();
 
         Intent intent = new Intent(this, event_display.class);
         intent.putExtra("Event name", text);
@@ -244,7 +244,7 @@ public class event_creation extends AppCompatActivity implements AdapterView.OnI
         intent.putExtra("Hour", hour);
         intent.putExtra("Minutes", minutes);
         intent.putExtra("LUL", lul);
-        intent.putExtra("picture", byteArray);
+        intent.putExtra("picture", R.drawable.images2);
         startActivity(intent);
     }
 

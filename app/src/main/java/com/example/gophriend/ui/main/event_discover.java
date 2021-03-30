@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
@@ -38,7 +39,17 @@ public class event_discover extends Fragment {
         imgView4 = (ImageView) imgView4.findViewById(R.id.event4);
         imgView4.setImageResource(R.drawable.yoga);**/
 
+        ImageButton ib = (ImageButton) view.findViewById(R.id.imageButton51);
 
+        ib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), Footballevent.class);
+                startActivity(i);
+                ((Activity) getActivity()).overridePendingTransition(0, 0);
+                //startActivity(new Intent(this, Club_creation.class));
+            }
+        });
 
         button.setOnClickListener(new View.OnClickListener() {
         @Override

@@ -47,6 +47,10 @@
         <activity
             android:name=".event_creation"
             android:theme="@style/Theme.Gophriend.NoActionBar" />
+        <activity android:name=".ui.main.Chessclub"
+            android:theme="@style/Theme.Gophriend.NoActionBar"/>
+        <activity android:name=".ui.main.Footballevent"
+            android:theme="@style/Theme.Gophriend.NoActionBar"/>
     </application>
 
 </manifest>

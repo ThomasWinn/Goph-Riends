@@ -41,6 +41,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/event1" />
 
+        <ImageView
+            android:id="@+id/event2"
+            android:layout_width="173dp"
+            android:layout_height="169dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:contentDescription="@string/sample_event2_image"
+            android:src="@drawable/futbol"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
@@ -56,27 +68,25 @@
             android:id="@+id/eventText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="36dp"
-            android:layout_marginRight="36dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
             android:text="UMN Football Game"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton51" />
+            app:layout_constraintTop_toBottomOf="@+id/event2" />
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="140dp"
-            android:layout_marginLeft="140dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginLeft="104dp"
             android:layout_marginTop="2dp"
             android:text="101 ppl going"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView15"
-            app:layout_constraintTop_toBottomOf="@+id/eventText2"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/eventText2" />
 
         <ImageView
             android:id="@+id/event3"
@@ -114,6 +124,41 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/eventText3" />
 
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginRight="95dp"
+            android:text="0 ppl joined"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventText4" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="187dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/images2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventText2"
+            app:srcCompat="@drawable/images2" />
+
+        <TextView
+            android:id="@+id/eventText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="76dp"
+            android:text="Meme Party"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/add"
             android:layout_width="wrap_content"
@@ -127,18 +172,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@android:drawable/ic_menu_add" />
 
-        <ImageButton
-            android:id="@+id/imageButton51"
-            android:layout_width="182dp"
-            android:layout_height="169dp"
-            android:layout_marginTop="104dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/event1"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/futbol" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
