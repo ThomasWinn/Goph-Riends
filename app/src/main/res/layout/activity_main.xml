@@ -43,7 +43,7 @@
                 app:srcCompat="@android:drawable/ic_dialog_email" />
 
             <ImageButton
-                android:id="@+id/clubButton"
+                android:id="@+id/notification_butt"
                 android:layout_width="56dp"
                 android:layout_height="51dp"
 

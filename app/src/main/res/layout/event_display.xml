@@ -104,7 +104,7 @@
         android:layout_marginEnd="44dp"
         android:layout_marginRight="44dp"
         android:layout_marginBottom="28dp"
-        android:text="Button"
+        android:text="Back"
         app:backgroundTint="#800000" />
 
 </RelativeLayout>

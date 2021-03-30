@@ -45,6 +45,15 @@ public class MainActivity extends AppCompatActivity {
 
         ImageButton ib = (ImageButton) findViewById(R.id.prof_butt);
         ImageButton inboxbutt = (ImageButton) findViewById(R.id.inboxButton);
+        ImageButton nb = (ImageButton) findViewById(R.id.notification_butt);
+
+        nb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Notification.class));
+            }
+        });
+
         ib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Inbox.class));
             }
         });
+
+
 
 //        ib.setOnClickListener(new View.OnClickListener {
 //            @Override

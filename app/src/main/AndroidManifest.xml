@@ -51,6 +51,8 @@
             android:theme="@style/Theme.Gophriend.NoActionBar"/>
         <activity android:name=".ui.main.Footballevent"
             android:theme="@style/Theme.Gophriend.NoActionBar"/>
+        <activity android:name=".Notification"
+            android:theme="@style/Theme.Gophriend.NoActionBar"/>
     </application>
 
 </manifest>
