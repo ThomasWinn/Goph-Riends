@@ -33,7 +33,7 @@ public class PlaceholderFragment extends Fragment {
 
             if (value == 1)
             {
-                fragment = new testtest();
+                fragment = new club_discover_anime();
             }
             else {
                 fragment = new club_discover();
