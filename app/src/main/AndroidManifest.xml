@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gophriend">
-        <activity android:name=".ui.Message.Inbox"/>
+        <activity android:name=".ui.Message.Inbox"
+            android:theme="@style/Theme.Gophriend.NoActionBar"/>
         <activity android:name=".ui.Message.MessageMain"/>
         <activity android:name=".RegisterPage" />
         <activity
