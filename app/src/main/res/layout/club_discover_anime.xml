@@ -96,7 +96,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="64dp"
             android:contentDescription="@string/sample_club4_images"
-            android:src="@drawable/dance"
+            android:src="@drawable/images"
             app:layout_constraintStart_toEndOf="@+id/club3"
             app:layout_constraintTop_toBottomOf="@+id/clubText2" />
 
@@ -107,7 +107,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="60dp"
             android:layout_marginRight="60dp"
-            android:text="Dance Club"
+            android:text="Anime Club"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -117,13 +117,13 @@
             android:id="@+id/add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginBottom="78dp"
+            android:layout_marginStart="313dp"
+            android:layout_marginLeft="313dp"
+            android:layout_marginTop="68dp"
             android:contentDescription="@string/link_to_add_club_creation"
             app:backgroundTint="#AFA9B8"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clubText4"
             app:srcCompat="@android:drawable/ic_menu_add" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
