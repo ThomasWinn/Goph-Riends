@@ -8,121 +8,110 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/event1"
+            android:id="@+id/club1"
             android:layout_width="173dp"
             android:layout_height="169dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="100dp"
-            android:contentDescription="@string/sample_event1_image"
-            android:src="@drawable/hackathon"
+            android:contentDescription="@string/sample_club1_image"
+            android:src="@drawable/chess1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/eventText1"
+            android:id="@+id/clubText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="4dp"
-            android:text="Weekend Hackaton"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Chess Club"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/event1" />
+            app:layout_constraintTop_toBottomOf="@+id/club1" />
 
         <ImageView
-            android:id="@+id/event2"
+            android:id="@+id/club2"
             android:layout_width="173dp"
             android:layout_height="169dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:contentDescription="@string/sample_event2_image"
-            android:src="@drawable/football"
+            android:contentDescription="@string/sample_club2_image"
+            android:src="@drawable/skii"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/clubText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="2dp"
-            android:text="67 ppl joined"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/eventText1" />
-
-        <TextView
-            android:id="@+id/eventText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="22dp"
-            android:layout_marginRight="22dp"
-            android:text="UMN Football Game"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginRight="65dp"
+            android:text="Skii Club"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/event2" />
-
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="104dp"
-            android:layout_marginLeft="104dp"
-            android:layout_marginTop="2dp"
-            android:text="101 ppl going"
-            app:layout_constraintStart_toEndOf="@+id/textView15"
-            app:layout_constraintTop_toBottomOf="@+id/eventText2" />
+            app:layout_constraintTop_toBottomOf="@+id/club2" />
 
         <ImageView
-            android:id="@+id/event3"
+            android:id="@+id/club3"
             android:layout_width="173dp"
             android:layout_height="169dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="70dp"
-            android:contentDescription="@string/sample_event3_images"
-            android:src="@drawable/rave"
+            android:layout_marginTop="64dp"
+            android:contentDescription="@string/sample_club3_images"
+            android:src="@drawable/amongus"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            app:layout_constraintTop_toBottomOf="@+id/clubText1" />
 
         <TextView
-            android:id="@+id/eventText3"
+            android:id="@+id/clubText3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="4dp"
-            android:text="Friday Rave Party"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="12dp"
+            android:text="Among Us Club"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/event3" />
+            app:layout_constraintTop_toBottomOf="@+id/club3" />
+
+        <ImageView
+            android:id="@+id/club4"
+            android:layout_width="173dp"
+            android:layout_height="169dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="64dp"
+            android:contentDescription="@string/sample_club4_images"
+            android:src="@drawable/images"
+            app:layout_constraintStart_toEndOf="@+id/club3"
+            app:layout_constraintTop_toBottomOf="@+id/clubText2" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/clubText4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="2dp"
-            android:text="32 ppl going"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/eventText3" />
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:text="Anime Club"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/club4" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/add"
@@ -130,8 +119,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
-            android:layout_marginBottom="16dp"
-            android:contentDescription="@string/link_to_event_creation"
+            android:layout_marginBottom="78dp"
+            android:contentDescription="@string/link_to_add_club_creation"
             app:backgroundTint="#AFA9B8"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
