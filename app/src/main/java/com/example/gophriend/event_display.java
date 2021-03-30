@@ -47,10 +47,15 @@ public class event_display extends AppCompatActivity {
 
         //Picture stuffs
         Bundle extras = getIntent().getExtras();
-        byte[] byteArray = extras.getByteArray("picture");
-        Bitmap bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+//        byte[] byteArray = extras.getByteArray("picture");
+//        Bitmap bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
         ImageView image = (ImageView) findViewById(R.id.imageView2);
-        image.setImageBitmap(bmp);
+//        image.setImageBitmap(bmp);
+
+        if (extras != null) {
+            int res_image = extras.getInt("picture");
+            image.setImageResource(res_image);
+        }
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
