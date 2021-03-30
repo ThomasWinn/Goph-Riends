@@ -57,6 +57,9 @@ public class event_display extends AppCompatActivity {
             image.setImageResource(res_image);
         }
 
+
+
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

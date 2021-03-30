@@ -41,18 +41,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/event1" />
 
-        <ImageView
-            android:id="@+id/event2"
-            android:layout_width="173dp"
-            android:layout_height="169dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:contentDescription="@string/sample_event2_image"
-            android:src="@drawable/football"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
@@ -68,14 +56,13 @@
             android:id="@+id/eventText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
             android:layout_marginEnd="22dp"
             android:layout_marginRight="22dp"
             android:text="UMN Football Game"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/event2" />
+            tools:layout_editor_absoluteY="274dp" />
 
         <TextView
             android:id="@+id/textView16"
@@ -136,6 +123,18 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@android:drawable/ic_menu_add" />
+
+        <ImageButton
+            android:id="@+id/imageButton51"
+            android:layout_width="182dp"
+            android:layout_height="169dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/eventText2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.885"
+            app:srcCompat="@drawable/football" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

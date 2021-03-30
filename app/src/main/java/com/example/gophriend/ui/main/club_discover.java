@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -41,6 +42,18 @@ public class club_discover extends Fragment{
         ImageView imageclub4 = null;
         imageclub4 = (ImageView) imageclub4.findViewById(R.id.club4);
         imageclub4.setImageResource(R.drawable.dance);**/
+
+        ImageButton ib = (ImageButton) view.findViewById(R.id.imageButton2);
+
+        ib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), Chessclub.class);
+                startActivity(i);
+                ((Activity) getActivity()).overridePendingTransition(0, 0);
+                //startActivity(new Intent(this, Club_creation.class));
+            }
+        });
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

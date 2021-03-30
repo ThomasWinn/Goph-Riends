@@ -13,30 +13,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/club1"
-            android:layout_width="173dp"
-            android:layout_height="169dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="100dp"
-            android:contentDescription="@string/sample_club1_image"
-            android:src="@drawable/chess1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/clubText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="24dp"
             android:text="Chess Club"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/club1" />
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
         <ImageView
             android:id="@+id/club2"
@@ -100,6 +88,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@android:drawable/ic_menu_add" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="166dp"
+            android:layout_height="167dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chess1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
