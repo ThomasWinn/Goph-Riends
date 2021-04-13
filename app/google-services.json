@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "534090102138",
+    "project_id": "gophriend",
+    "storage_bucket": "gophriend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534090102138:android:321636907762c51a2392c3",
+        "android_client_info": {
+          "package_name": "com.example.gophriend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534090102138-vdagbju6ur9sqqohusphau39pc06kjbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBveUSSpy1s5bKnTm51-YrTsYyavfBFxkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534090102138-vdagbju6ur9sqqohusphau39pc06kjbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
